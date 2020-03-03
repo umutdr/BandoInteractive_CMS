@@ -20,7 +20,7 @@ namespace BandoInteractive_CMS.Service.Services
             return result;
         }
 
-        public Page GetById(int pageId)
+        public Page GetById(int? pageId)
         {
             Page page = pageManagement.GetById(pageId);
 

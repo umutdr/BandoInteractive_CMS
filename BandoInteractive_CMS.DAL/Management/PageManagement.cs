@@ -26,7 +26,7 @@ namespace BandoInteractive_CMS.DAL.Management
             return result > 0;
         }
 
-        public Page GetById(int pageId)
+        public Page GetById(int? pageId)
         {
             Page page = dataContext.Pages.SingleOrDefault(x => x.Id == pageId);
 
@@ -35,7 +35,7 @@ namespace BandoInteractive_CMS.DAL.Management
 
         public List<Page> GetAll()
         {
-            List<Page> pageList = dataContext.Pages.ToList();
+            List<Page> pageList = dataContext.Pages.Include(p => p.Layout).Include(p => p.ParentPage).ToList();
 
             return pageList;
         }
