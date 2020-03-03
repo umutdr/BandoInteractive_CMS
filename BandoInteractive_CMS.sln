@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BandoInteractive_CMS", "Ban
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BandoInteractive_CMS.Entity", "BandoInteractive_CMS.Entity\BandoInteractive_CMS.Entity.csproj", "{4C5F798C-B838-443A-A5B9-D4A08F16DDE3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BandoInteractive_CMS.DAL", "BandoInteractive_CMS.DAL\BandoInteractive_CMS.DAL.csproj", "{1D88E065-5A82-4F96-A721-CF53C7A655E6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{4C5F798C-B838-443A-A5B9-D4A08F16DDE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4C5F798C-B838-443A-A5B9-D4A08F16DDE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4C5F798C-B838-443A-A5B9-D4A08F16DDE3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D88E065-5A82-4F96-A721-CF53C7A655E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D88E065-5A82-4F96-A721-CF53C7A655E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D88E065-5A82-4F96-A721-CF53C7A655E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D88E065-5A82-4F96-A721-CF53C7A655E6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
