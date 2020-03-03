@@ -33,6 +33,20 @@ namespace BandoInteractive_CMS.DAL.Management
             return page;
         }
 
+        public Page GetByURL(string pageURL)
+        {
+            var page = dataContext.Pages.Include(x => x.Layout).SingleOrDefault(x => x.URL == pageURL);
+
+            return page;
+        }
+
+        public IQueryable<Page> GetChildsById (int id)
+        {
+            var childPages = dataContext.Pages.Where(x => x.ParentPageId == id && x.Id != id);
+
+            return childPages;
+        }
+
         public List<Page> GetAll()
         {
             List<Page> pageList = dataContext.Pages.Include(p => p.Layout).Include(p => p.ParentPage).ToList();

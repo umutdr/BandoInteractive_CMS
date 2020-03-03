@@ -1,6 +1,7 @@
 ﻿using BandoInteractive_CMS.DAL.Management;
 using BandoInteractive_CMS.Entity.Entities;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace BandoInteractive_CMS.Service.Services
 {
@@ -25,6 +26,20 @@ namespace BandoInteractive_CMS.Service.Services
             Page page = pageManagement.GetById(pageId);
 
             return page;
+        }
+
+        public Page GetByURL(string pageURL)
+        {
+            Page page = pageManagement.GetByURL(pageURL);
+
+            return page;
+        }
+
+        public IQueryable<Page> GetChildsById(int id)
+        {
+            var childPages = pageManagement.GetChildsById(id);
+
+            return childPages;
         }
 
         public List<Page> GetAll()

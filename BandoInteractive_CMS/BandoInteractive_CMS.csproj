@@ -120,9 +120,10 @@
     <Content Include="Areas\Admin\Views\Page\Edit.cshtml" />
     <Content Include="Areas\Admin\Views\Page\Delete.cshtml" />
     <None Include="packages.config" />
-    <Content Include="Views\_ViewStart.cshtml" />
-    <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Shared\MyLayouts\MyLayout1.cshtml" />
+    <Content Include="Views\Shared\MyLayouts\MyLayout2.cshtml" />
+    <Content Include="Views\Shared\MyLayouts\MyLayout3.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

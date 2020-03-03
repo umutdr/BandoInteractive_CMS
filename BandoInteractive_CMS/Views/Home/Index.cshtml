@@ -1,1 +1,17 @@
-﻿<h1>User Home/Index</h1>
+﻿@model BandoInteractive_CMS.Entity.Entities.Page
+
+@{
+    Layout = Model.Layout.Path;
+}
+
+@Html.Raw(Model.Content)
+
+@if (Model.ChildPages != null)
+{
+    <ul>
+        @foreach (var child in Model.ChildPages)
+        {
+            <li><a href=@child.URL>@child.Name</a></li>
+        }
+    </ul>
+}

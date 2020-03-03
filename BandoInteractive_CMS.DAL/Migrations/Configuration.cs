@@ -40,7 +40,7 @@
             {
                 if (!context.Pages.Any())
                     context.Pages.Add(
-                        new Page() { Name = "Home", Content = "This is Home Page!", URL = "/Home", ParentPageId = 1, LayoutId = 1 }
+                        new Page() { Name = "Home", Content = "This is Home Page!", URL = "/HomePage", ParentPageId = 1, LayoutId = 1 }
                     );
             }
             catch (Exception e)
