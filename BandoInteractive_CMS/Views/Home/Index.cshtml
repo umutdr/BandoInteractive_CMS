@@ -4,7 +4,7 @@
     Layout = Model.Layout.Path;
 }
 
-@Html.Raw(Model.Content)
+@Model.Content
 
 @if (Model.ChildPages != null)
 {
