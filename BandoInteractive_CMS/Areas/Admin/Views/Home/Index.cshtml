@@ -1,1 +1,8 @@
-﻿<h1>Admin Home/Index</h1>
+﻿@model List<BandoInteractive_CMS.Entity.Entities.Page> 
+
+<ul>
+    @foreach (var page in Model)
+    {
+        <li><a href=@page.URL>@page.Name</a></li>
+    }
+</ul>

@@ -26,7 +26,7 @@ namespace BandoInteractive_CMS.DAL.Management
             return result > 0;
         }
 
-        public Layout GetById(int layoutId)
+        public Layout GetById(int? layoutId)
         {
             Layout layout = dataContext.Layouts.SingleOrDefault(x => x.Id == layoutId);
 

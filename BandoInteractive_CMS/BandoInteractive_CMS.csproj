@@ -95,6 +95,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
     <Compile Include="Areas\Admin\Controllers\HomeController.cs" />
+    <Compile Include="Areas\Admin\Controllers\LayoutController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -107,6 +108,11 @@
     <Content Include="Areas\Admin\Views\_ViewStart.cshtml" />
     <Content Include="Areas\Admin\Views\Shared\_AdminLayout.cshtml" />
     <Content Include="Areas\Admin\Views\Home\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\Layout\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\Layout\Details.cshtml" />
+    <Content Include="Areas\Admin\Views\Layout\Create.cshtml" />
+    <Content Include="Areas\Admin\Views\Layout\Edit.cshtml" />
+    <Content Include="Areas\Admin\Views\Layout\Delete.cshtml" />
     <None Include="packages.config" />
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
@@ -122,6 +128,16 @@
     <Folder Include="App_Data\" />
     <Folder Include="Areas\Admin\Data\" />
     <Folder Include="Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BandoInteractive_CMS.Entity\BandoInteractive_CMS.Entity.csproj">
+      <Project>{4C5F798C-B838-443A-A5B9-D4A08F16DDE3}</Project>
+      <Name>BandoInteractive_CMS.Entity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BandoInteractive_CMS.Service\BandoInteractive_CMS.Service.csproj">
+      <Project>{66EF5BB8-8D1E-45F1-9B02-AC2CBD83BA0E}</Project>
+      <Name>BandoInteractive_CMS.Service</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -20,7 +20,7 @@ namespace BandoInteractive_CMS.Service.Services
             return result;
         }
 
-        public Layout GetById(int layoutId)
+        public Layout GetById(int? layoutId)
         {
             Layout layout = layoutManagement.GetById(layoutId);
 

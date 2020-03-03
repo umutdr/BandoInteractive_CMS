@@ -1,14 +1,36 @@
 ﻿<!DOCTYPE html>
-
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
-    <title>_AdminLayout</title>
+    <style>
+        a {
+            text-decoration: none;
+        }
+
+        .navbar tr td {
+            border-left: 1px solid black;
+            border-right: 1px solid black;
+            padding: 5px;
+        }
+
+        .navbar tr td:hover {
+            background:  #eee;
+        }
+
+</style>
 </head>
 <body>
-    <h1>Admin Layout</h1>
+    <div class="navbar">
+        <table>
+            <tr>
+                <td>@Html.ActionLink("Home Page", "Index", "Home", routeValues: new { area = "" }, htmlAttributes: null)</td>
+                <td>@Html.ActionLink("Manage Pages", "Index", "Page")</td>
+                <td>@Html.ActionLink("Manage Layouts", "Index", "Layout")</td>
+            </tr>
+        </table>
+    </div>
     <hr />
-    <div> 
+    <div>
         @RenderBody()
     </div>
 </body>
